@@ -81,7 +81,7 @@ service =  my-service
 The easiest way to deploy **ofelia** is using *Docker*.
 
 ```sh
-docker run -it -v /etc/ofelia:/etc/ofelia mcuadros/ofelia:latest
+docker run -it -v /etc/ofelia:/etc/ofelia -v /var/run/docker.sock:/var/run/docker.sock:ro mcuadros/ofelia:latest
 ```
 
 Don't forget to place your `config.ini` at your host machine.
